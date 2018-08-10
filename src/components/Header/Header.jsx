@@ -28,34 +28,34 @@ function Header({ ...props }) {
         [" " + classes[color]]: color
     });
 
-  return (
-    <AppBar className={classes.appBar + appBarClasses}>
-      <Toolbar className={classes.container}>
-        <div className={classes.flex}>
+    return (
+        <AppBar className={classes.appBar + appBarClasses}>
+            <Toolbar className={classes.container}>
+                <div className={classes.flex}>
 
-          <Button color="transparent" href="#" className={classes.title}>
-            {makeBrand()}
-          </Button>
-        </div>
+                    <Button color="transparent" href="#" className={classes.title}>
+                        {makeBrand()}
+                    </Button>
+                </div>
 
-        <Hidden mdUp implementation="css">
-          <IconButton
-            className={classes.appResponsive}
-            color="inherit"
-            aria-label="open drawer"
-            onClick={props.handleDrawerToggle}
-          >
-            <Menu />
-          </IconButton>
-        </Hidden>
-      </Toolbar>
-    </AppBar>
-  );
-}
+                <Hidden mdUp implementation="css">
+                    <IconButton
+                        className={classes.appResponsive}
+                        color="inherit"
+                        aria-label="open drawer"
+                        onClick={props.handleDrawerToggle}
+                        >
+                            <Menu />
+                        </IconButton>
+                    </Hidden>
+                </Toolbar>
+            </AppBar>
+        );
+    }
 
-Header.propTypes = {
-    classes: PropTypes.object.isRequired,
-    color: PropTypes.oneOf(["primary", "info", "success", "warning", "danger"])
-};
+    Header.propTypes = {
+        classes: PropTypes.object.isRequired,
+        color: PropTypes.oneOf(["primary", "info", "success", "warning", "danger"])
+    };
 
-export default withStyles(headerStyle)(Header);
+    export default withStyles(headerStyle)(Header);

@@ -84,32 +84,6 @@ function Color(props) {
             <SwatchColorItem colorClass={"colors__item colors--bap-chart-yellow1"} colorLabel={"#F8E71C"}/>
         </SwatchContainer>
 
-        <h2>Typography</h2>
-        <p>
-        The color of text depends upon the background (light text on a dark background or dark text on a white background).
-        </p>
-
-        <p>
-        For light backgrounds:
-        </p>
-        <ul>
-            <li>Never use black.</li>
-            <li>For primary text, use an opacity of 84%</li>
-            <li>Secondary text should have an opacity of 54%.</li>
-            <li>Hint text, like those in text fields and labels, and disabled text have even lower visual prominence with an opacity of 26%.</li>
-        </ul>
-
-        <p>
-        For dark backgrounds:
-        </p>
-
-        <ul>
-            <li>For primary text, use white at 100% opacity</li>
-            <li>Hints, disabled text, and icons have an opacity of 26%.</li>
-        </ul>
-
-
-
       </CardBody>
     </Card>
   );
